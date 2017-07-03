@@ -1,0 +1,1646 @@
+/*全局样式的重置*/
+body, div, table, dl, dt, dd, ul, ol, li, p, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*引入字体文件*/
+@font-face {
+    font-family: fpIconFont;
+    src: url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.eot);
+    src: url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.eot?#iefix) format('embedded-opentype'), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.woff) format('woff'), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.ttf) format('truetype'), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.svg#fpIconFont) format('svg')
+}
+/*定义使用字体*/
+.fp-iconfont {
+    font-family: fpIconFont !important;
+}
+
+body {
+    font: 12px/1.5 "Microsoft YaHei", tahoma, arial, "\5b8b\4f53";
+    /*arial 默认英文字体 翻译成中文就是“宋体”*/
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+/*body{
+    !*margin-left: -15px;*!
+    position: relative;
+    left: -15px;
+}*/
+.main { /*版心*/
+    margin: 0 auto;
+    /*margin: 0 auto 0 -15px; × */
+    width: 1230px;
+}
+.ml15{
+    margin-left: -15px;
+}
+/*header*/
+.header {
+    min-width: 1230px;
+    height: 163px;
+}
+
+.headertop {
+    border-bottom: 1px solid #f5103b;
+    height: 32px;
+    background: url("../images/header-bg.jpg");
+}
+
+.headertop .left {
+    float: left;
+    line-height: 32px;
+    color: #fff;
+}
+
+.headertop .left a {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.headertop .right {
+    float: right;
+}
+
+.headerbom {
+    height: 130px;
+    background: url("../images/head-bg.jpg");
+}
+
+.headertop .line {
+    float: left;
+    margin-left: 13px;
+    color: #ccc;
+    line-height: 32px;
+}
+
+.headertop .sublist {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+}
+
+.headertop .sublist > a {
+    color: #fff;
+    line-height: 32px;
+}
+
+.headertop .sublist > a:hover {
+    color: #ffe013;
+}
+
+.headertop .sublist > a i {
+    display: inline-block;
+}
+
+.headertop .sublist .btn {
+    border: 3px solid;
+    border-color: #ddd transparent transparent;
+    width: 0;
+    height: 0;
+    vertical-align: -1px;
+}
+
+.headertop .icon {
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/tianmao.png") no-repeat;
+    vertical-align: middle;
+}
+
+.headertop .icon1 {
+    background-position: -12px 0;
+}
+
+.headertop .icon2 {
+    background-position: -24px 0;
+}
+
+.headertop .icon3 {
+    background-position: -36px 0;
+}
+
+.headertop .icon4 {
+    background-position: -48px 0;
+}
+
+.headertop .myself {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding-right: 6px;
+}
+
+.headertop .myself .hidlist {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    z-index: 6;
+    border: 1px solid #eee;
+    border-top: none;
+    width: 74px;
+    padding: 8px 10px;
+    background: #fff;
+    line-height: 20px;
+}
+
+.headertop .myself .hidlist a {
+    color: #777;
+}
+
+.headertop .myself:hover {
+    border-left-color: #eee;
+    border-right-color: #eee;
+    background: #fff;
+}
+
+.headertop .myself:hover > a, .headertop .hidlist a:hover {
+    color: #c40000;
+    text-decoration: underline;
+}
+
+.headertop .myself:hover .hidlist {
+    display: block;
+}
+
+.headertop .support .hidlist, .headertop .navlist .hidlist {
+    left: auto; /*auto 恢复默认值*/
+    right: -1px;
+    width: 122px;
+}
+
+.headertop .navlist .hidlist {
+    padding: 25px 0;
+    width: 1200px;
+}
+
+.headertop .navlist dl {
+    float: left;
+    border-right: 1px solid #f5f5f5;
+    height: 200px;
+}
+
+.headertop .navlist dl span {
+    margin-left: 4px;
+}
+
+.headertop .navlist dd {
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+.headertop .navlist .hidlist a {
+    float: left;
+    padding-left: 10px;
+    width: 85px;
+    line-height: 26px;
+    color: #777;
+}
+
+.headertop .navlist dt {
+    padding-left: 30px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.headertop .navlist .hot {
+    display: inline-block;
+    width: 9px;
+    height: 11px;
+    background: url("../images/tianmao_1.png") no-repeat;
+    background-position: -37px 0;
+    vertical-align: text-top;
+}
+
+.headertop .navlist .new {
+    background-position: -37px -11px;
+}
+
+.headertop .navlist .hotbox {
+    width: 305px;
+}
+
+.headertop .navlist .hotbox dt {
+    color: #f5700b;
+}
+
+.headertop .navlist .market {
+    width: 405px;
+}
+
+.headertop .navlist .market dt {
+    color: #2f6cd6;
+}
+
+.headertop .navlist .brand {
+    width: 300px;
+}
+
+.headertop .navlist .brand a {
+    width: 80px;
+}
+
+.headertop .navlist .help {
+    border-right: none;
+    width: 150px;
+}
+
+.headertop .hidlist a:hover {
+    color: #c40000;
+}
+
+.headertop .sublist:hover .btn {
+    transition: transform .2s ease-in; /*ease-in 慢进入*/
+    transform: rotate(180deg); /*顺时针旋转多少度*/
+    transform-origin: 50% 30%;
+    /*默认值是50% 50% 0*/
+}
+
+/*deg 角度单位*/
+.headerbom .logo {
+    position: relative;
+    left: -45px;
+    float: left;
+    /*margin-left: -45px;*/
+    width: 290px;
+    height: 130px;
+}
+
+.headerbom .ser {
+    float: left;
+    margin: 38px 0 0 15px;
+}
+
+.headerbom .ser input {
+    float: left;
+}
+
+.headerbom .ser .text {
+    border: 2px solid #c40000;
+    padding: 0 8px;
+    width: 475px;
+    height: 36px;
+    background: #fff;
+    outline: none;
+}
+
+.headerbom .ser .btn {
+    border: none;
+    width: 130px;
+    height: 40px;
+    background: #c40000;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.headerbom .ser p {
+    font-size: 0;
+}
+
+.headerbom .ser a {
+    border-left: 1px solid #ccc;
+    padding: 0 13px 0 12px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.headerbom .ser .noline {
+    border: none;
+    padding-left: 0;
+}
+
+/*header end*/
+/*nav*/
+.nav {
+    height: 36px;
+    background: #dd2727;
+    line-height: 36px;
+}
+
+.nav ul {
+    margin-left: 200px;
+}
+
+.nav img {
+    width: 90px;
+    height: 36px;
+}
+
+.nav li {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.nav a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.nav .bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 15px;
+    background: url("../images/maotou.png") no-repeat;
+    background-size: 40px 15px;
+}
+
+.nav li:hover .bg {
+    transition: top 0.3s;
+    top: -10px;
+}
+
+/*nav end*/
+
+/*banner*/
+.banner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("../images/TB1Q4fJFVXXXXXiXFXXJgUmHVXX-184-38.gif") no-repeat center #e8e8e8;
+}
+
+.banner .bom {
+    height: 100%;
+    background: #059386;
+}
+
+.banimg img {
+    width: 1120px;
+    height: 500px;
+}
+
+.banner .main {
+    position: relative;
+}
+
+.sbanner {
+    position: absolute;
+    top: 10px;
+    right: 110px;
+}
+
+.sbanner a {
+    display: block;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 235px;
+    background: rgba(255, 255, 255, .7);
+}
+
+.sbanner a:hover {
+    transition: background .5s;
+    background: rgba(255, 255, 255, 1);
+}
+
+.banner .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.banner .top .bg {
+    position: absolute;
+    width: 386px;
+    height: 499px;
+    top: 0;
+}
+
+.banner .top .left {
+    left: -386px;
+    background: url("../images/TB1313XOVXXXXaLXpXXwu0bFXXX.png") no-repeat;
+}
+
+.banner .top .right {
+    right: -386px;
+    background: url("../images/TB1aP3bOVXXXXXhXpXXwu0bFXXX.png") no-repeat;
+}
+
+.sublink {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100px;
+    height: 480px;
+}
+
+.sublink .linkbg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+}
+
+.sublink .content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.sublink .content a {
+    color: #fff;
+}
+
+.sublink .content .title {
+    margin: 10px;
+    border-bottom: 1px dashed #565656;
+    padding-bottom: 3px;
+}
+
+.sublink .title .imgbg {
+    margin: 2px auto 5px;
+    width: 70px;
+    height: 70px;
+    background: url("../images/maotou_bg.png") no-repeat;
+}
+
+.sublink .title span {
+    line-height: 24px;
+}
+
+.sublink .title a {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+}
+
+.sublink .title .login {
+    margin-bottom: 5px;
+    border-radius: 12px;
+    width: 80px;
+    background: #dd2727;
+}
+
+.sublink .more {
+    padding: 12px 0 21px;
+}
+
+.sublink .more p {
+    margin-bottom: 5px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.sublink .more i {
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 17px;
+    background: #fff;
+    vertical-align: middle;
+}
+
+.sublink .more .privilege {
+    margin-bottom: 0;
+    line-height: 38px;
+}
+
+.activity {
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.activitybg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.sublink .last {
+    margin-top: 10px;
+}
+
+.sublink .last p {
+    overflow: hidden;
+    margin: 7px auto;
+    border-radius: 50%;
+    background: #fff;
+    width: 57px;
+    height: 57px;
+}
+
+.sublink .last img {
+    width: 100%;
+    height: 100%;
+}
+
+.sublink .last a {
+    line-height: 22px;
+}
+
+.sublink:hover .linkbg {
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+.sub-nav {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    width: 200px;
+    height: 536px;
+}
+
+.sub-nav .title {
+    height: 36px;
+    line-height: 36px;
+}
+
+.sub-nav .title p {
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sub-nav .title .years {
+    color: #ffe013;
+}
+
+.sub-nav .title .curr {
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+.sub-nav .year {
+    padding-top: 29px;
+    height: 471px;
+    background: rgba(0, 0, 0, .6); /*兼容ie9浏览器*/
+}
+
+.sub-nav .year li {
+    overflow: hidden;
+    margin: 0 auto 14px;
+    border: 1px solid #cb0c10;
+    border-radius: 8px;
+    width: 150px;
+    height: 29px;
+    text-align: center;
+    line-height: 29px;
+}
+
+.sub-nav .year a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sub-nav .year a:hover {
+    background: #cb0c10;
+}
+
+.sub-nav .year i {
+    display: inline-block;
+    margin-right: 7px;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    background: url("../images/list_bg.png") no-repeat;
+}
+
+.banner .slider {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -108px;
+    width: 216px;
+    height: 20px;
+}
+
+.banner .slider li {
+    float: left;
+    margin: 0 8px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.banner .slider li:hover {
+    background: #fff;
+}
+
+.bannav {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+.bannav .bannbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    opacity: 0.95;
+    z-index: -1;
+}
+
+.bannav .nav-list li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #000;
+}
+
+.bannav .nav-list li > a {
+    color: #000;
+}
+
+.bannav .nav-list li > i {
+    display: inline-block;
+    margin: 0 7px 0 13px;
+    width: 17px;
+    height: 17px;
+    background: url("../images/list_bg.png") no-repeat;
+    vertical-align: middle;
+}
+
+.bannav .nav-list li:hover {
+    background: #fff;
+}
+
+.bannav .nav-list li:hover > a {
+    font-weight: 900;
+}
+
+.bannav .nav-list .list2 > i {
+    background-position: 0 -30px;
+}
+
+.bannav .nav-list .list3 > i {
+    background-position: 0 -60px;
+}
+
+.bannav .nav-list .list4 > i {
+    background-position: 0 -90px;
+}
+
+.bannav .nav-list .list5 > i {
+    background-position: 0 -120px;
+}
+
+.bannav .list1:hover > a, .list1 .hidnav a:hover, .list1 .hidnav .cur {
+    color: #e54077;
+}
+
+.bannav .list2:hover > a, .list2 .hidnav a:hover {
+    color: #427def;
+}
+
+.bannav .list3:hover > a, .list3 .hidnav a:hover {
+    color: #6347ed;
+}
+
+.bannav .list4:hover > a, .list4 .hidnav a:hover {
+    color: #f7a831;
+}
+
+.bannav .list5:hover > a, .list5 .hidnav a:hover {
+    color: #dd2727;
+}
+
+.bannav .hidnav {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    z-index: 2;
+    width: 852px;
+    height: 500px;
+    background: #fafafa;
+}
+
+.hidnav .navleft {
+    float: left;
+    padding: 19px 30px 0;
+    width: 583px;
+    height: 481px;
+    background: #fff;
+}
+
+.hidnav .navleft dl {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+.hidnav .navleft dt {
+    float: left;
+    width: 90px;
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+}
+
+.hidnav .navleft dt span {
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.hidnav .navleft dd {
+    float: left;
+    border-bottom: 1px dashed #e6e6e6;
+    padding-bottom: 11px;
+    width: 493px;
+    font-size: 0;
+}
+
+.hidnav .navleft dd a {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.hidnav .navright {
+    float: right;
+    margin: 10px 12px 0 0;
+    width: 187px;
+    height: 490px;
+}
+
+.hidnav .navright table {
+    margin: -1px 0 0 -1px;
+    /*border-spacing: 1px;
+    border-collapse: collapse;*/
+}
+
+.hidnav .navright table img {
+    width: 93px;
+    height: 47px;
+}
+
+.hidnav .bomimg {
+    margin-top: 11px;
+    width: 189px;
+    height: 87px;
+}
+
+.hidnav .bomimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.bannav li:hover .hidnav {
+    display: block;
+}
+
+/*banner end*/
+/*conbox*/
+.conbox {
+    padding-top: 60px;
+    background: #f5f5f5;
+}
+
+.brand {
+    background: #fff;
+}
+
+.brandleft {
+    float: left;
+    width: 488px;
+    height: 436px;
+    background: #050505;
+}
+
+.brandtop {
+    position: relative;
+    margin-bottom: 9px;
+    height: 275px;
+}
+
+.brandtop li {
+    display: none;
+}
+
+.brandtop .cur {
+    display: block;
+}
+
+.brandtop img {
+    width: 100%;
+    height: 100%;
+}
+
+.brandtop .play {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    color: #fff;
+}
+
+.brandtop .play i {
+    display: inline-block;
+    margin-right: 2px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #fe4672;
+}
+
+.brandtop a {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -36px;
+    width: 72px;
+    height: 59px;
+    background: url("../images/play.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.brandtop h4 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -193px;
+    width: 386px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis; /*溢出的文本用省略号代替*/
+    white-space: nowrap; /*强制文字不折行*/
+}
+
+.brandtop .time {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.brandtop .time i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 13px;
+    height: 13px;
+    background: url("../images/time.png") no-repeat;
+}
+
+.brandtop .time .align {
+    margin: 0 0.5em;
+}
+
+.brandleft .middle {
+    position: relative;
+    overflow: hidden;
+}
+
+.brandleft ol {
+    width: 984px;
+}
+
+.brandleft ol li {
+    position: relative;
+    float: left;
+    margin-right: 4px;
+    width: 160px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.brandleft ol img {
+    width: 100%;
+    height: 100%;
+}
+
+.brandleft ol h4 {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.brandleft ol li:hover:before {
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+
+.brandleft ol li:hover:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -19px;
+    margin-top: -15px;
+    width: 38px;
+    height: 30px;
+    background: url("../images/play.png");
+    background-size: 100% 100%;
+}
+
+.brandleft .middle .btn {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 17px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.brandleft .middle .btnl {
+    background: url("../images/btnL.png");
+    left: 0;
+}
+
+.brandleft .middle .btnr {
+    background: url("../images/btnR.png");
+    right: 0;
+}
+
+.brandleft dl dt {
+    float: left;
+    margin: 14px 5px 0 22px;
+    width: 85px;
+    height: 30px;
+    background: url("../images/play_1.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.brandleft dl dd {
+    float: left;
+    overflow: hidden;
+    margin-top: 11px;
+    height: 50px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.brandleft dd .time {
+    display: block;
+    color: #fd4889;
+}
+
+.brandleft dd p {
+    height: 50px;
+}
+
+.brandright {
+    float: left;
+    margin-left: 10px;
+    width: 732px;
+    background: #f5f5f5;
+}
+
+.brandright li {
+    position: relative;
+    float: left;
+    margin: 0 1px 1px 0;
+    width: 121px;
+    height: 108px;
+    background: #fff;
+}
+
+.brandright li img {
+    display: block;
+    margin: 29px auto 0;
+    width: 100px;
+    height: 50px;
+}
+
+.brandright .before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+}
+
+.brandright li:hover .before, .brandright li:hover p {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+}
+
+.brandright li:hover p {
+    opacity: 1;
+}
+
+.brandright li p {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.brandright li .like {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    width: 13px;
+    height: 11px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.brandright li span {
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.brandright .click {
+    display: block;
+    margin: 0 auto;
+    border-radius: 9px;
+    width: 63px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    background: #ff0000;
+}
+
+.brandright .last {
+    text-align: center;
+    color: #999;
+}
+
+.brandright .last b {
+    display: inline-block;
+    margin-top: 23px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/bg-cur.png");
+}
+
+.brandright .last:hover {
+    background: #dd2727;
+    color: #fff;
+}
+
+.brandright .last:hover b {
+    transition: transform 0.5s;
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
+    background: url("../images/bg-hover.png");
+}
+.column{
+    margin: 30px 0 0 -10px;
+}
+.column li{
+    float: left;
+    margin-left: 10px;
+    width: 238px;
+    height: 477px;
+    background: #fff;
+    text-align: center;
+}
+.column .title{
+    height: 36px;
+    line-height: 36px;
+    background: #dd2727;
+    font-size: 18px;
+    color: #fff;
+}
+.column .title i{
+    margin-right: 6px;
+    font-style: normal;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.cont span{
+    display: block;
+}
+.cont .tittop{
+    margin-top: 20px;
+    line-height: 26px;
+    color: #000;
+    font-size: 22px;
+}
+.cont .titbom{
+    line-height: 20px;
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+}
+.cont p{
+    margin: 5px auto 9px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background: #f8f8f8;
+}
+.cont .line{
+    border-radius: 0;
+    height: 1px;
+    background: #eeeeee;
+}
+.cont p img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+.cont p:hover img{
+    transform: scale(1.1);
+}
+
+.project{margin-top: 30px;}
+.project .title{
+    margin-bottom: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.project .title h3{
+    float: left;
+    border-left: 5px solid #ea5f8d;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+.project .title span{
+    font-size: 14px;
+}
+.project .list{
+    margin-right: 9px;
+    float: right;
+}
+.project .list a{
+    margin-left: 24px;
+    color: #000;
+    font-size: 14px;
+}
+.project .list a:hover{
+    text-decoration: underline;
+}
+.conlist .left{
+    position: relative;
+    float: left;
+    width: 246px;
+    height: 440px;
+}
+.conlist .left img{
+    width: 100%;
+    height: 330px;
+}
+.conlist .left .sum{
+    overflow: hidden;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(255,255,255,0.6);
+    text-align: center;
+}
+.conlist .left .sum span{
+    display: block;
+    color: #000;
+}
+.conlist .left .msg{
+    padding-top: 20px;
+    height: 90px;
+    background: url("../images/db_c.png") no-repeat center bottom #ea5f8d;
+    text-align: center;
+}
+.conlist .left .msgtit{
+    display: block;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+}
+.conlist .left .msgsum{
+    display: block;
+    line-height: 24px;
+    font-size: 18px;
+    color: #fff;
+}
+.conlist .left:hover img{
+    opacity: 0.8;
+}
+.conlist .left:hover .sum span{
+    color: #dd2727;
+}
+.conlist .center{
+    float: left;
+    width: 735px;
+}
+.conlist .center li{
+    position: relative;
+    float: left;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 25px 0 0 25px;
+    width: 219px;
+    height: 195px;
+    background: #fff;
+    line-height: 26px;
+}
+.conlist .center h4{
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+}
+.conlist .center p{
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    color: #ea5f8d;
+}
+.conlist .center img{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 154px;
+    height: 154px;
+    transition: right 0.3s;
+}
+.conlist .center li:hover img{
+    right: 3px;
+}
+.conlist .right{
+    width: 248px;
+}
+.conlist .right li{
+    border-right: none;
+    width: 223px;
+    height: 121px;
+}
+.conlist .right img{
+    width: 100px;
+    height: 100px;
+}
+.blue .title h3{
+    border-left-color: #0aa6e8;
+}
+.blue .left .msg{
+    background-color: #0aa6e8;
+}
+.blue .center p{
+    color: #0aa6e8;
+}
+.center li.subject{
+    width: 464px;
+}
+.center .subject h3{
+    margin-top: 14px;
+    line-height: 36px;
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+}
+.center li.subject img{
+    width: 195px;
+    height: 195px;
+}
+.green .title h3{
+    border-left-color: #64c333;
+}
+.green .left .msg{
+    background-color: #64c333;
+}
+.green .center p{
+    color: #64c333;
+}
+.project .nobor h3{
+    border-left:none;
+}
+.flaglist{
+    float: left;
+    margin: 0 1px 1px 0;
+    /*border: 1px solid transparent;*/
+    padding: 0 9px;
+    width: 596px;
+    height: 346px;
+    background: #fff;
+}
+.flagtop{
+    margin: 10px 0 8px 0;
+}
+.flagtop img{
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+.flagtop h5{
+    float: left;
+    font-weight: normal;
+}
+.flagtop h5 a{
+    display: block;
+    margin-top: 6px;
+    line-height: 22px;
+    color: #333;
+    font-size: 18px;
+}
+.flagtop h5 span{
+    display: block;
+    line-height: 24px;
+    color: #999;
+    font-size: 14px;
+}
+.flagtop .btn{
+    float: right;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+.flaglist ol{
+    margin-left: -10px;
+}
+.flaglist .lists{
+    float: left;
+    margin-left: 10px;
+    width: 192px;
+}
+.flaglist .lists img{
+    width: 192px;
+    height: 192px;
+    transition: opacity 0.3s;
+}
+.flaglist .lists .tit{
+    margin: 10px 0 5px 0;
+    line-height: 18px;
+    color: #000;
+}
+.flaglist .lists .rmb{
+    line-height: 22px;
+    font-size: 16px;
+    color: #dd2727;
+    font-weight: 600;
+}
+.flaglist .lists:hover img{
+    opacity: 0.8;
+}
+.flaglist:hover{
+    /*border-color: #dd2727;*/
+    outline: 1px solid #dd2727;
+}
+.guess {
+    margin: 25px auto 18px;
+    width: 172px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+.guess span{
+    margin-right: 5px;
+    color: #dd2727;
+}
+.guess:before,.guess:after{
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #979797;
+    vertical-align: 5px;
+}
+.guesslist{
+    margin-left: -8px;
+}
+.guesslist li{
+    float: left;
+    margin: 0 0 14px 8px;
+    padding: 2px;
+    width: 235px;
+    height: 315px;
+    background: #fff;
+}
+.guesslist li img{
+    width: 235px;
+    height: 235px;
+    transition: opacity 0.3s;
+}
+.guesslist li p{
+    margin: 0 10px;
+}
+.guesslist li .tit{
+    margin-top: 14px;
+    line-height: 18px;
+    color: #666;
+}
+.guesslist li .rmb{
+    margin-top: 5px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #ff0000;
+}
+.guesslist li:hover{
+    outline: 1px solid #dd2727;
+}
+.guesslist li:hover img{
+    opacity: 0.8;
+}
+
+
+.footertop{
+    border-top: 1px solid #d1d7dc;
+    height: 364px;
+    background: #fff;
+}
+.footertop .help{
+    padding: 25px 0 0 50px;
+}
+.footertop .help dl{
+    float: left;
+    margin-right: 17px;
+    width: 220px;
+}
+.footertop .help dt{
+    margin-bottom: 3px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #646464;
+}
+.footertop .help dd{
+    line-height: 20px;
+}
+.footertop .help a{
+    color: #8b8b8b;
+}
+.footertop dl.last{
+    margin-right: 0;
+    width: 230px;
+}
+.footertop .last img{
+    width: 105px;
+    height: 105px;
+}
+.footer{
+    border-top: 2px solid #c40000;
+    height: 195px;
+    background: #000;
+    line-height: 20px;
+}
+.footer .main{
+    position: relative;
+}
+.footer .fotbg{
+    position: absolute;
+    top: -26px;
+    left: 50px;
+    width: 70px;
+    height: 24px;
+    background: url("../images/maotou1.png") no-repeat;
+    background-size: 100% 100%;
+}
+.footer .link,.footer .link a{
+    line-height: 36px;
+    color: #fff;
+}
+.footer .msg,.footer .msg a{
+    color: #a4a4a4;
+}
+.footer .msg a{
+    margin-right: 65px;
+}
+.footer .copy{
+    color: #686868;
+}
+/*sidebar*/
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 20;
+    width: 35px;
+    height: 100%;
+    background: #000;
+}
+.sidebar .myself{
+    position: relative;
+    margin-top:120px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.sidebar .myself:hover .icon{
+    background: #ff0000;
+}
+.sidebar .myself .msg{
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: -1px;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #494949;
+    color: #fff;
+}
+.sidebar .msg .btn{
+    position: absolute;
+    top: 10px;
+    right: -14px;
+    width: 0;
+    height: 0;
+    border: 7px solid;
+    border-color: transparent transparent transparent #494949;
+}
+.sidebar .myself:hover .msg{
+    display: block;
+}
+.sidebar .car{
+    color: #fff;
+    padding: 0 6px;
+    text-align: center;
+}
+
+
+
+
